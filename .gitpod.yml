@@ -13,3 +13,4 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPCAE_ROOT
+      aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID" --profile user2 && aws configure set aws_secret_access_key "$AWS_ACCESS_KEY_SECRET" --profile user2 && aws configure set region "$AWS_REGION" --profile user2 && aws configure set output "json" --profile user2
